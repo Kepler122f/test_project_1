@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <!-- тег <html> содержит глобальный атрибут 'lang' -->
 
 <head>
     <meta charset="utf-8">
 
-    <!-- добавление faicon в формате icon-->
     <link rel="sql icon" href="icon/sql_black.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/Style.css">
+
+    <meta name="description" content="Test page 1. HTML/CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
     <title>Test Page 1</title>
 </head>
@@ -16,67 +19,68 @@
 <body>
 
     <nav>
-        <ul> Navigation <br>
-            <a href="https://kepler122f.github.io/test_project_1/test_0.html"><button><strong>Main Taste Page</strong></button></a><br>
-<!--             <a href="http://php.local/users_reg/test_2.html">Move to Test Page 2</a> -->
-        </ul>
+        <a href="http://php.local/users_reg/test_0.html">
+            <button><strong>Main Test Page</strong></button></a>
+        &nbsp;
+            <a href="http://php.local/users_reg/test_2.html"> 
+                <button>Move to Test Page 2</button></a>
     </nav>
-        <hr>
-        
-        <h1>Test Page 1</h1>
-
-        <hr>
-
-        <!-- картинка с ссылкой и просто картинка-->
-        <p>
-            <a href="https://ru.wikipedia.org/wiki/MySQL" title="ссылка на статью в Википедии" target="_blank">
-            <img src="../users_reg/img/MySQL48.png" alt="MySQL"></a>
-            <img src="http://php.local/users_reg/img/MySQL_old(48).png">
-        </p>
-        <hr>
-        <!-- булевый атрибут -->
-        <p>    
-            <input type="text" disabled>
-        </p>
-        <hr>
-                <!-- ненумерованный список с ссылками -->
-        <ul class="crud">
-            <!-- элемент ненумерованны список с атрибутом для установлении имени -->
-            <!-- по идентификатору устанавливается отдельные параметры в CSS -->
-            <abbr title="CRUD is an acronym that stands for Create, Read, Update, and Delete.">
-                <strong>CRUD</strong>
-            </abbr>
-                <li>CREATE</li>
-                <li>READ</li>
-                <li>UPDATE</li>
-                <li>DELETE</li>
-        </ul>
-
-        <!-- ссылки на внутренние ресурсы страницы -->
-        <lo>
-            <li><a href="test_2.html"> link to Test Page 2 (use id)</a></li>
-            <li><a href="http://php.local/users_reg/test_2.html"> link to Test Page 2 (use URL)</a></li>
-            <li><a href="mailto:">e-mail link or share link</a></li>
-        <lo>
-
     <hr>
 
+    <p>
+        <a href="#bottom"><button>Down</button></a>
+    </p>
 
-    <h2>Testing JavaScript</h2>
-    <em>
-        Below using code
-    </em>
+    <h1>Test Page 1</h1>
+    <hr>
 
-    <pre class="using_code">
+    <h2>HTML elements example</h2>
+   
+    <ol>
 
-    <code>list.onclick = function(e) {
-        e.stopPropagation();
-        const listContent = prompt('Enter new content');
-        this.textContent = listContent;
-    </code></pre>
+        <li>
+            <p>
+                <a href="https://ru.wikipedia.org/wiki/MySQL" title="ссылка на статью в Википедии" target="_blank">
+                <img src="../users_reg/img/MySQL48.png" alt="MySQL"></a>
+                <img src="http://php.local/users_reg/img/MySQL_old(48).png">
+            </p>
+        </li>
+        
+        <li>
+            <form>    
+                <input type="text" disabled>
+            </form>  
+        </li>
 
-    <script src="js/script.js"></script>
+        <li>
+            <ul>
+                <li><a href="test_2.html" title="click"> link to Test Page 2 (use id)</a></li>
+                <li><a href="http://php.local/users_reg/test_2.html" title="click"> link to Test Page 2 (use URL)</a></li>
+                <li><a href="mailto:" title="click">e-mail link or share link</a></li>
+            </ul>
+                
+        </li>
 
+        <li>
+            <p>
+                <audio src="audio/Sound_startXP.mp3" controls></audio>
+            </p>
+        </li>
 
+        <li>
+            <p>
+                <video src="video/video_eath-around.mp4" controls width="300" height="220"></video>
+            </p>
+        </li>
+
+        <li>
+            
+        </li>
+
+    </ol>
+
+    <p>
+        <a id="bottom" href="#top"><button>Up</button></a>
+    </p>
 </body>
 </html>
