@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- тег <html> содержит глобальный атрибут 'lang' -->
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- добавление faicon в формате icon-->
+    <link rel="sql icon" href="icon/sql_black.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Style.css">
+
+    <title>Test Page 1</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul> Navigation <br>
+            <a href="http://php.local/users_reg/test_0.html"><button><strong>Main Taste Page</strong></button></a><br>
+            <a href="http://php.local/users_reg/test_2.html">Move to Test Page 2</a>
+        </ul>
+    </nav>
+        <hr>
+        
+        <h1>Test Page 1</h1>
+
+        <hr>
+
+        <!-- картинка с ссылкой и просто картинка-->
+        <p>
+            <a href="https://ru.wikipedia.org/wiki/MySQL" title="ссылка на статью в Википедии" target="_blank">
+            <img src="../users_reg/img/MySQL48.png" alt="MySQL"></a>
+            <img src="http://php.local/users_reg/img/MySQL_old(48).png">
+        </p>
+        <hr>
+        <!-- булевый атрибут -->
+        <p>    
+            <input type="text" disabled>
+        </p>
+        <hr>
+                <!-- ненумерованный список с ссылками -->
+        <ul class="crud">
+            <!-- элемент ненумерованны список с атрибутом для установлении имени -->
+            <!-- по идентификатору устанавливается отдельные параметры в CSS -->
+            <abbr title="CRUD is an acronym that stands for Create, Read, Update, and Delete.">
+                <strong>CRUD</strong>
+            </abbr>
+                <li>CREATE</li>
+                <li>READ</li>
+                <li>UPDATE</li>
+                <li>DELETE</li>
+        </ul>
+
+        <!-- ссылки на внутренние ресурсы страницы -->
+        <lo>
+            <li><a href="test_2.html"> link to Test Page 2 (use id)</a></li>
+            <li><a href="http://php.local/users_reg/test_2.html"> link to Test Page 2 (use URL)</a></li>
+            <li><a href="mailto:">e-mail link or share link</a></li>
+        <lo>
+
+    <hr>
+
+
+    <h2>Testing JavaScript</h2>
+    <em>
+        Below using code
+    </em>
+
+    <pre class="using_code">
+
+    <code>list.onclick = function(e) {
+        e.stopPropagation();
+        const listContent = prompt('Enter new content');
+        this.textContent = listContent;
+    </code></pre>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
